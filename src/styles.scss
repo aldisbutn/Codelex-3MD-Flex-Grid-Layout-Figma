@@ -79,8 +79,7 @@ body {
 .container {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
-  grid-template-rows: 30px 550px 400px 1000px 200px;
-  gap: 0px 0px;
+  gap: 50px 0px;
   grid-auto-flow: row;
   grid-template-areas:
     "header header header header header header"
@@ -88,7 +87,8 @@ body {
     "posts posts posts posts posts posts"
     "works works works works works works"
     "footer footer footer footer footer footer";
-  width: 1000px;
+  width: auto;
+  max-width: 1000px;
   margin-left: auto;
   margin-right: auto;
 }
@@ -129,12 +129,11 @@ body {
 
 .posts {
   display: grid;
-  grid-template-columns: 420px 420px;
-  grid-template-rows: 20px 300px;
-  gap: 20px 20px;
+  gap: 20px;
   justify-content: center;
   align-content: center;
   grid-area: posts;
+  padding: 20px 0px 40px 0px;
 }
 
 .posts--bg {
